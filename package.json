@@ -1,0 +1,44 @@
+{
+  "name": "zenmillionaire",
+  "version": "0.1.0",
+  "description": "A money advisor for Claude that councils you instead of automating you. Persona counciling for Money EQ + Money IQ, every claim cited to a real book or talk.",
+  "keywords": [
+    "claude-code",
+    "claude",
+    "skill",
+    "money",
+    "personal-finance",
+    "money-mindset",
+    "financial-intelligence",
+    "wealth",
+    "advisor",
+    "council",
+    "ai-augmentation"
+  ],
+  "homepage": "https://github.com/charlesdove977/zenmillionaire#readme",
+  "bugs": {
+    "url": "https://github.com/charlesdove977/zenmillionaire/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlesdove977/zenmillionaire.git"
+  },
+  "license": "MIT",
+  "author": "Charles J Dove",
+  "type": "commonjs",
+  "bin": {
+    "zenmillionaire": "bin/zenmillionaire.js"
+  },
+  "files": [
+    "bin/",
+    "skill/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "test": "node bin/zenmillionaire.js --version && echo 'OK'"
+  }
+}

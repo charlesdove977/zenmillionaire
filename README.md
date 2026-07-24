@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero.png" alt="ZenMillionaire — Persona Counciling for Money EQ and Money IQ" width="100%">
+  <img src="https://raw.githubusercontent.com/charlesdove977/zenmillionaire/main/assets/hero.png" alt="ZenMillionaire — Persona Counciling for Money EQ and Money IQ" width="100%">
 </p>
 
 <h1 align="center">ZenMillionaire</h1>
@@ -7,6 +7,14 @@
 <p align="center">
   <b>A money advisor for Claude that councils you instead of automating you.</b><br>
   Every opinion it gives is traced back to a real book or talk, and it names the source out loud.
+</p>
+
+<p align="center">
+  <a href="https://www.charlieautomates.com/charlie-os-vs/"><img src="https://img.shields.io/badge/Work_with_Charlie-Charlie_OS-7c3aed?style=for-the-badge&logo=anthropic&logoColor=white" alt="Work with Charlie"></a>
+  <a href="https://www.npmjs.com/package/zenmillionaire"><img src="https://img.shields.io/npm/v/zenmillionaire?color=blue&label=npm" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/zenmillionaire"><img src="https://img.shields.io/npm/dt/zenmillionaire?color=blue&label=downloads" alt="npm downloads"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/npm/l/zenmillionaire?color=green" alt="MIT license"></a>
+  <a href="https://github.com/charlesdove977/zenmillionaire/stargazers"><img src="https://img.shields.io/github/stars/charlesdove977/zenmillionaire?style=flat" alt="stars"></a>
 </p>
 
 <p align="center">
@@ -74,7 +82,7 @@ Every claim the skill makes is tagged to one of these. If an idea is not in the 
 
 This repo ships the **distilled, cited frameworks** for each book, my own summaries with short quotes and page numbers, which is commentary, not the book. **It does not ship the books themselves.** Owning a copy of a book does not give anyone the right to republish it, so the full texts stay out of this repo on purpose.
 
-If you want the deepest version of the skill, **buy the books.** Then use [`tasks/add-source.md`](tasks/add-source.md) to drop your own copy in and let the skill distill it. The repo gives you the engine and the method. You bring your own library. See [`sources/INDEX.md`](sources/INDEX.md) for the full citation registry.
+If you want the deepest version of the skill, **buy the books.** Then use [`tasks/add-source.md`](skill/tasks/add-source.md) to drop your own copy in and let the skill distill it. The repo gives you the engine and the method. You bring your own library. See [`sources/INDEX.md`](skill/sources/INDEX.md) for the full citation registry.
 
 ---
 
@@ -132,8 +140,8 @@ You can do this with any money-shaped moment. A negotiation, a hiring decision, 
 
 Nothing in this skill is hidden in code. Everything it "knows" is editable markdown under `frameworks/`, `personas/`, and `sources/`. You own the whole system.
 
-- **Add advisors** → [`tasks/create-persona.md`](tasks/create-persona.md). Build a voice around any source in the library, or a blend.
-- **Add knowledge** → [`tasks/add-source.md`](tasks/add-source.md). Add a book you own (PDF) or a talk (video). The skill distills it into a cited framework and registers it in the index. Want it sharper on investing, real estate, or tax? Feed it the books you trust on those and it grows in that direction.
+- **Add advisors** → [`tasks/create-persona.md`](skill/tasks/create-persona.md). Build a voice around any source in the library, or a blend.
+- **Add knowledge** → [`tasks/add-source.md`](skill/tasks/add-source.md). Add a book you own (PDF) or a talk (video). The skill distills it into a cited framework and registers it in the index. Want it sharper on investing, real estate, or tax? Feed it the books you trust on those and it grows in that direction.
 - **Tune the existing voices** → edit any file in `personas/`. Change a persona's beliefs, its signature phrases, or which sources it is allowed to draw from.
 - **Build your profile** → run the **Diagnose me** mode once. It stores a money-blueprint and personality read that every future council uses to personalize its advice to you.
 
@@ -143,11 +151,26 @@ The library ships with 12 sources and 10 personas. It is meant to grow. The vers
 
 ## Install
 
-Drop the folder into your Claude Code skills directory:
+Install the skill with one command (no clone needed):
+
+```bash
+# Global — installs into ~/.claude/skills/zenmillionaire/
+npx zenmillionaire install
+
+# Or scoped to just the current project
+npx zenmillionaire install --project
+
+# Add a /zenmillionaire slash command stub too
+npx zenmillionaire install --with-commands
+```
+
+Update or remove later with `npx zenmillionaire update` / `npx zenmillionaire uninstall`.
+
+Prefer to do it by hand? Clone and copy the `skill/` folder:
 
 ```bash
 git clone https://github.com/charlesdove977/zenmillionaire.git
-cp -r zenmillionaire ~/.claude/skills/zenmillionaire
+cp -r zenmillionaire/skill ~/.claude/skills/zenmillionaire
 ```
 
 Then, in any Claude Code session:
@@ -156,7 +179,7 @@ Then, in any Claude Code session:
 /zenmillionaire
 ```
 
-To go deeper, buy the books you care about most and add them with `tasks/add-source.md`.
+To go deeper, buy the books you care about most and add them with `skill/tasks/add-source.md`.
 
 ---
 

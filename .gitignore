@@ -1,8 +1,12 @@
 # Never publish copyrighted source material. Frameworks (distilled + cited) only.
-sources/books/*.pdf
-sources/books/*.epub
-sources/transcripts/*.md
-!sources/transcripts/.gitkeep
+skill/sources/books/*.pdf
+skill/sources/books/*.epub
+skill/sources/transcripts/*.md
+!skill/sources/transcripts/.gitkeep
+
+# node / npm
+node_modules/
+*.tgz
 
 # OS / editor cruft
 .DS_Store
