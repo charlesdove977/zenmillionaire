@@ -1,0 +1,9 @@
+# Never publish copyrighted source material. Frameworks (distilled + cited) only.
+sources/books/*.pdf
+sources/books/*.epub
+sources/transcripts/*.md
+!sources/transcripts/.gitkeep
+
+# OS / editor cruft
+.DS_Store
+*.swp
