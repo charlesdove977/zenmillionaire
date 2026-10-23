@@ -26,6 +26,8 @@
   <a href="#make-it-yours">Customize</a>
 </p>
 
+**Want a money advisor like this working for you?** Join [CC Strategic AI +](https://www.skool.com/cc-strategic-ai-plus/about): my 27-day Claude Code mastery program with a 1-click install setup file, and you work with us to land your first AI client in 90 days, or your money back.
+
 Step-by-step guide and setup walkthrough: [ZenMillionaire guide on charlieautomates.com](https://charlieautomates.com/resources/zenmillionaire/)
 
 ---
@@ -202,4 +204,4 @@ And the library has a spirit worth keeping: peace of mind and "enough" matter as
   <a href="https://start.ccstrategic.io/skool">Community</a>
 </p>
 
-More free Claude Code tools: [charlieautomates.com](https://charlieautomates.com/free-resources/)
+More free Claude Code tools: [charlieautomates.com](https://charlieautomates.com/free-resources/) · Go deeper inside [CC Strategic AI +](https://www.skool.com/cc-strategic-ai-plus/about)
