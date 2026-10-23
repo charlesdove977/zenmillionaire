@@ -26,6 +26,8 @@
   <a href="#make-it-yours">Customize</a>
 </p>
 
+Step-by-step guide and setup walkthrough: [ZenMillionaire guide on charlieautomates.com](https://charlieautomates.com/resources/zenmillionaire/)
+
 ---
 
 ## The idea: AI Augmentation, not AI Automation
@@ -199,3 +201,5 @@ And the library has a spirit worth keeping: peace of mind and "enough" matter as
   <a href="https://instagram.com/charlieautomates">Instagram</a> ·
   <a href="https://start.ccstrategic.io/skool">Community</a>
 </p>
+
+More free Claude Code tools: [charlieautomates.com](https://charlieautomates.com/free-resources/)
